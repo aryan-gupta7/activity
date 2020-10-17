@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Data</title>
+</head>
+<body>
+    <h1 align="center">Welcome to data page</h1>
+    <table align="center">
+        <tr>
+            <th>NAME</th>
+            <th>ACTIVITY</th>
+        </tr>
+        {% for i in info %}
+        <tr>
+            {% for item in i %}
+            <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
